@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  resources :portfolios
-  get 'pages/home'
-  get 'pages/about'
-  get 'pages/contact'
+
+  root to: 'pages#home' #index principal
+
   resources :blogs
+  resources :portfolios
+
+  get 'about', to: 'pages#about' #controller / method - aqui se puede usar la ruta que sea y no afecta la funcionalidad
+  get 'pages/contact' #controller / method - aqui no se puede cambiar la ruta pues pierde la secuencia que usa rails, si queremos cambiar la ruta se debe usar la forma de arriba
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
