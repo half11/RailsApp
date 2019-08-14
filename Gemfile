@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Friendly routes, hides ID in route
 gem 'friendly_id', '~> 5.2.4'
+#authentication
+gem 'devise', '~> 4.6', '>= 4.6.2'
