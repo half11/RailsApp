@@ -62,3 +62,5 @@ gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'bootstrap', '~> 4.3.1'
 
 gem 'jquery-rails'
+
+gem 'view_tool_acm', git: 'https://github.com/half11/acm_gem'

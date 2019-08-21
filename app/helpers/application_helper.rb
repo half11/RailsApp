@@ -15,4 +15,8 @@ module ApplicationHelper
             content_tag(:p, greeting, class: "source-greeting")
         end
     end
+
+    def copyright_generator
+        @copyright = ViewToolAcm::Renderer.copyright 'Alfredo Castillon', 'All rights reserved'
+    end
 end
