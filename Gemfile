@@ -64,3 +64,5 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 gem 'view_tool_acm', git: 'https://github.com/half11/acm_gem'
+
+gem 'petergate', '~> 2.0', '>= 2.0.1'
