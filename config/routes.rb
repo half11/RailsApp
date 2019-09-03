@@ -9,8 +9,9 @@ Rails.application.routes.draw do
     end
   end
 
-
-  resources :portfolios, except: [:show]
+  resources :portfolios, except: [:show] do
+    put :sort, on: :collection
+  end
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   get 'about', to: 'pages#about' #controller / method - aqui se puede usar la ruta que sea y no afecta la funcionalidad
