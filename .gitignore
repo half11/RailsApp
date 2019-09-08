@@ -28,3 +28,7 @@
 
 #Hide database config
 /config/database.yml
+
+# my secrets
+/config/secrets/yml
+.env
