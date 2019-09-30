@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-
-  resources :comments
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
   root to: 'pages#home' #index principal
 
@@ -20,4 +18,6 @@ Rails.application.routes.draw do
   get 'tech-news', to: 'pages#tech_news' 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  mount ActionCable.server => '/cable'
 end
