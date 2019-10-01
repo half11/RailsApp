@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  #get 'topics/index'
+  #get 'topics/show'
+  resources :topics, only: [:index, :show]
+
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
 
   resources :blogs do
