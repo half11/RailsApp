@@ -4,6 +4,7 @@
 
 @import "bootstrap";
 @import "font-awesome";
+@import "gritter";
 
 /*
  * Globals
@@ -193,4 +194,7 @@
   .blogcrumb a {
     font-size: 1.5em;
     margin: 0px 10px 0px 10px;
+  }
+  .blog-sidebar-source{
+    margin-top: 20px;
   }
